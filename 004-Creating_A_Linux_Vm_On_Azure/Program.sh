@@ -26,6 +26,8 @@
                         Link: https://cmder.app/
 
 '
+# Will print the current user.
+whoami
 
 # Display the duration in which the system is in on condition.
 uptime
