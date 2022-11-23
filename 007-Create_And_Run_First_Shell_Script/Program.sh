@@ -39,4 +39,7 @@ sudo su -
 usermod -s /bin/zsh ubuntu # Change the default shell for a ubuntu user to zsh. You should have admin privileges to change the shell of a user.
 usermod -s /bin/bash ubuntu # Change the default shell for a ubuntu user to bash.
 su - ubuntu
+
+# Running a bash script.
+bash Program.sh
 echo "Hello World"
