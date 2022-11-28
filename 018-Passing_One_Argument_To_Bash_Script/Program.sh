@@ -7,7 +7,7 @@
 >>>>
 >>>>
 '
-# < is used to get the first value.
+# < is used to redirect the input to the wc command.
 nline=$(wc -l < $1)
 echo "There are $nline lines in $1 "
 

@@ -9,6 +9,7 @@
 '
 
 # Print the number of CPU cores.
-nproc
+# nproc will be printed in the same line.
+echo -n "Number of CPU(s): "; nproc
 
 echo "Hello World"
