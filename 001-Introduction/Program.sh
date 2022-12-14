@@ -12,7 +12,9 @@
         More reference link:
             https://phoenixnap.com/kb/how-to-vim-save-quit-exit
             https://www.cyberciti.biz/faq/linux-unix-vim-save-and-quit-command/
->>>>
+>>>> TMUX command line utility.
+        Very useful to split terminals.
+        Also to run same command on all terminals.
 >>>>
 '
 
