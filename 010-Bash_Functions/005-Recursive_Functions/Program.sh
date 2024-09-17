@@ -8,6 +8,7 @@
 >>>>
 >>>>
 '
+
 # Print the factorial of numbers.
 function factorial() {
     if [ $1 -eq 1 ]; then
@@ -25,13 +26,14 @@ factorial 5
 echo -n "6! is :"
 factorial 6
 
-# Creating a infinite recursive function.
+# Creating an infinite recursive function.
 function recur() {
     echo "Hello, Friend!"
     recur
 }
 
-recur
+# Uncomment the line below to test the infinite recursive function
+# recur
 
 # Adding a base case to the infinite recursive function.
 counter=1
@@ -40,7 +42,7 @@ function finite_recur() {
     if [ $counter -eq 10 ]; then
         exit 1
     fi
-    counter=$(( $counter + 1))
+    counter=$(( $counter + 1 ))
     finite_recur
 }
 

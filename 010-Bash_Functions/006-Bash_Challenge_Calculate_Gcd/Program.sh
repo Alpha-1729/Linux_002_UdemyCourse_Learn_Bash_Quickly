@@ -16,6 +16,7 @@ gcd=1
 
 function common_divisor() {
     x=$1
+    # Check if x divides both num1 and num2 without leaving a remainder.
     if [ $(($num1 % $x)) -eq 0 ] && [ $(($num2 % $x)) -eq 0 ]; then
         return 1
     else
@@ -23,12 +24,15 @@ function common_divisor() {
     fi
 }
 
+# Loop through numbers from 1 to the smaller of num1 and num2.
 for ((i=1;i<=$num1 && i<=$num2;i++)); do
     common_divisor $i
+    # If common_divisor returns 1, update gcd.
     if [ $? -eq 1 ]; then 
         gcd=$i
     fi
 done
+
 echo "The gcd of $num1 and $num2 is: $gcd"
 
 echo "Hello World"
