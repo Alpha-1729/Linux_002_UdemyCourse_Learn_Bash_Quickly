@@ -10,6 +10,6 @@
 
 # Calling another bash script.
 echo "Calling the second script..." && sleep 1
-second.sh
+Second.sh
 
 echo "Hello World"
